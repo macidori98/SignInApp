@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Sign In App</string>
+    <string name="firstName">First name</string>
+    <string name="lastName">Last name</string>
+    <string name="call_profile">Number of calls from Profile:</string>
+    <string name="call_signin">Number of calls from Sign in page:</string>
+    <string name="call_reg">Number of calls from Register page:</string>
+    <string name="sign_up">Sign up</string>
+    <string name="register">Register</string>
+    <string name="registration">Registration</string>
+    <string name="department">Department</string>
+    <string name="profile">Profile</string>
+    <string name="sign_in">Sign in</string>
+    <string name="photo">Little round android logo</string>
+    <string name="back">Back</string>
+    <string name="App">App</string>
+</resources>
