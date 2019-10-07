@@ -47,7 +47,9 @@ public class RegisterActivity extends AppCompatActivity {
                 MyCounterClass.setRegistrationPageToProf();
                 message = firstName.getText().toString() + "\n\n" + lastName.getText().toString()
                         + "\n\n" + department.getText().toString();
-                profileIntent.putExtra(EXTRA_MESSAGE,message);
+                profileIntent.putExtra("ffirstname", firstName.getText().toString());
+                profileIntent.putExtra("llastname", lastName.getText().toString());
+                profileIntent.putExtra("ddepartment", department.getText().toString());
                 startActivityForResult(profileIntent, 1);
             }
         });

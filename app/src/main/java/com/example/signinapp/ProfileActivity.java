@@ -15,7 +15,7 @@ public class ProfileActivity extends AppCompatActivity {
 
     TextView details, reg, sigin;
     Intent previousIntent;
-    String message;
+    String message, fname, lname;
     Button back;
 
 
@@ -35,7 +35,9 @@ public class ProfileActivity extends AppCompatActivity {
         sigin.setText(String.valueOf(count));
 
         previousIntent = getIntent();
-        message = previousIntent.getStringExtra(SigningInActivity.EXTRA_MESSAGE);
+        fname = previousIntent.getStringExtra("fname");
+        lname = previousIntent.getStringExtra("lname");
+        message = fname + "\n\n" + lname;
 
         details.setText(message);
 

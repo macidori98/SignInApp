@@ -47,9 +47,11 @@ public class SigningInActivity extends AppCompatActivity {
         signUp.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                intentMessage = firstName.getText().toString() + "\n\n" + lastName.getText().toString()
+                profileIntent.putExtra("fname", firstName.getText().toString());
+                profileIntent.putExtra("lname", lastName.getText().toString());
+                /*intentMessage = firstName.getText().toString() + "\n\n" + lastName.getText().toString()
                  + "\n\n" + "-";
-                profileIntent.putExtra(EXTRA_MESSAGE, intentMessage);
+                profileIntent.putExtra(EXTRA_MESSAGE, intentMessage);*/
                 MyCounterClass.setSignInPageToProf();
                 startActivity(profileIntent);
             }

@@ -12,7 +12,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class ProfileActivityForResult extends AppCompatActivity {
     TextView details, reg, sigin;
     Intent previousIntent;
-    String message;
+    String fname, lname, dep, message;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,8 +28,11 @@ public class ProfileActivityForResult extends AppCompatActivity {
         sigin.setText(String.valueOf(count));
 
         previousIntent = getIntent();
-        message = previousIntent.getStringExtra(SigningInActivity.EXTRA_MESSAGE);
-
+        //message = previousIntent.getStringExtra(SigningInActivity.EXTRA_MESSAGE);
+        fname = previousIntent.getStringExtra("ffirstname");
+        lname = previousIntent.getStringExtra("llastname");
+        dep = previousIntent.getStringExtra("ddepartment");
+        message = fname + "\n\n" + lname + "\n\n" + dep;
         details.setText(message);
 
     }
